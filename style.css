@@ -3,7 +3,7 @@ body {
   background-color: rgba(0, 0, 0, 0.8);
   color: rgba(255, 255, 255, 0.829);
 }
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 1001px) {
   .burger_menu {
     display: none;
   }
@@ -22,50 +22,108 @@ body {
     border-bottom: 1px solid white;
     background-color: rgba(255, 255, 255, 0.363);
   }
-  .header_section_bottom ul{
+  .header_section_bottom ul {
     background-color: rgba(0, 0, 0, 0.13);
   }
-  .header_section_bottom ul li a{
+  .header_section_bottom ul li a {
     color: white;
   }
   .web_banner {
-    background-image: url(data/webbanner.gif);
+    background-image: url(data/1000-so-on.gif);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position-y: -100px;
-    background-position-x: -100px;
-    height: 55em;
+    height: 40em;
   }
-  .web_banner {
-    padding-bottom: 150px;
-    align-content: center;
-  }
-  .web_banner h1 {
+  .banner_heading h1 {
+    margin-top: 20%;
     position: relative;
-    color: black;
     font-family: "Dancing Script", cursive;
     font-optical-sizing: auto;
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 500;
     font-style: normal;
-    text-shadow: 2px 4px white;
-    -webkit-text-stroke: 0.3vw #ff7979;
+    text-shadow: 3px 6px rgb(255, 255, 255);
+    -webkit-text-stroke: 0.3vw #cc00ff;
   }
   h1::before {
     content: attr(data-text);
     position: absolute;
     top: 0;
     left: 0;
-    color: #333;
-    /* width: 0vw; */
+    color: #ff00ea;
     -webkit-text-stroke: 0vw #ff7979;
-    /* border-right: 2px solid black; */
-    /* overflow: hidden; */
     animation: animate 1s linear;
     animation-fill-mode: forwards;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
+  .header_section_top {
+    display: none;
+  }
+  .burger_menu {
+    margin: auto;
+    background-color: #555;
+    color: white;
+    border-radius: 10px;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
+  .web_banner {
+    background-image: url(data/900-1000.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40em;
+  }
+  .banner_heading h1 {
+    margin-top: 25%;
+    position: relative;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 4rem;
+    font-weight: 500;
+    text-shadow: 3px 6px rgba(255, 255, 255, 0.894);
+  }
+  h1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #ff00ea;
+    animation: animate 1s linear;
+    animation-fill-mode: forwards;
+  }
+}
+@media only screen and (max-width: 900px) {
   .header_section_top {
     display: none;
   }
@@ -113,15 +171,12 @@ body {
   }
   .web_banner {
     background-image: url(data/webBanner2.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    height: 30em;
+    height: 40em;
   }
-  .web_banner {
-    padding-bottom: 250px;
-    align-content: center;
-  }
-  .web_banner h1 {
+  .banner_heading h1 {
+    margin-top: 10%;
     position: relative;
     color: black;
     font-family: "Dancing Script", cursive;
@@ -143,11 +198,36 @@ body {
     animation-fill-mode: forwards;
   }
 }
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 899px) {
   .web_banner {
-    height: 30em;
+    background-image: url(data/700-900.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25em;
+  }
+  h1::before {
+    color: #00ff48b1;
+    margin-top: 5%;
   }
 }
+@media only screen and (max-width: 699px) {
+  .web_banner{
+    background-image:url(data/100-699.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40em;
+  }
+  .web_banner ul{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  h1::before {
+    content: attr(data-text);
+    color: #0000004d;
+    margin-top: 15%;
+  }
+}
+
 .header_section_bottom ul li,
 .header_section_top ul li {
   display: inline-block;
@@ -188,15 +268,14 @@ body {
     width: 100%;
   }
 }
-/* Slideshow container */
 .slideshow-container {
-  /* max-width: 1000px; */
   position: relative;
   margin: auto;
   padding-bottom: 5rem;
 }
-
-/* Next & previous buttons */
+.mySlides {
+  height: 35rem;
+}
 .prev,
 .next {
   cursor: pointer;
@@ -210,12 +289,9 @@ body {
   font-weight: bold;
   font-size: 2em;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
   align-content: center;
-  /* align-items: center; */
   text-align: center;
-  /* background-color: aqua; */
   opacity: 0;
 }
 .prev:hover,
@@ -223,20 +299,14 @@ body {
   width: 20%;
   color: white;
   font-size: 2em;
-  border-radius: 0 150px 150px 0;
   align-content: center;
   background-color: rgba(255, 255, 255, 0.239);
   opacity: 1;
 }
-.next:hover {
-  border-radius: 150px 0 0 150px;
-}
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-/* Caption text */
 .text {
   color: #f2f2f2;
   font-size: 15px;
@@ -246,8 +316,6 @@ body {
   width: 100%;
   text-align: center;
 }
-
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -255,8 +323,6 @@ body {
   position: absolute;
   top: 0;
 }
-
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -267,19 +333,15 @@ body {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active,
 .dot:hover {
   background-color: #717171;
 }
-
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 2.5s;
   animation-fill-mode: both;
 }
-
 @keyframes fade {
   from {
     opacity: 0.4;
@@ -288,8 +350,6 @@ body {
     opacity: 1;
   }
 }
-
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev,
   .next,
@@ -322,7 +382,6 @@ body {
 .about_us {
   font-size: 1.1rem;
   font-weight: 600;
-  /* height: 60vh; */
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -345,4 +404,57 @@ body {
 .footer {
   padding: 1.5rem;
   align-items: center;
+}
+.pokemon_banner {
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.pokemon_card {
+  width: 10rem;
+  display: inline-block;
+  text-transform: capitalize;
+  padding: 2rem;
+  border: 3px solid white;
+  margin: 2rem;
+}
+.pokemon_item :hover {
+  border: 3px solid red;
+  scale: 1.2;
+  color: black;
+}
+.pokemon_item :hover {
+  background-color: rgba(255, 255, 255, 0.357);
+  border: 0px;
+}
+.magic_button {
+  width: 100%;
+  background-color: #04aa6d;
+  border-radius: 2rem;
+  font-weight: 400;
+  font-size: 2rem;
+  color: white;
+  height: 55px;
+  margin: 45px 0px;
+}
+.magic_button:hover {
+  background-color: #04aa6d8f;
+  color: rgba(255, 255, 255, 0.529);
+}
+.pokemon_random_card {
+  background-color: rgba(255, 255, 255, 0.102);
+  text-transform: capitalize;
+  line-height: 1.5;
+  border-radius: 2rem;
+  padding: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.397);
+  width: 50%;
+}
+.pokemon_random_card:hover {
+  border: 2px solid rgba(255, 255, 255, 0.726);
+}
+.pokemon_random_image {
+  width: 50%;
+}
+.random_data_hover:hover {
+  scale: 1.03;
 }

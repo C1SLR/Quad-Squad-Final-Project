@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bootstrap.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/utilities.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sixtyfour+Convergence&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pokemons</title>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav>
+        <div class="container-fluid">
+          <div class="row header_section_top">
+            <div class="col"><h2>Logo</h2></div>
+            <div class="col header_section_top">
+              <ul>
+                <li>
+                  <a href="/index.html">Home</a>
+                </li>
+                <li>
+                  <a href="/index.html">Top Animes</a>
+                </li>
+                <li>
+                  <a href="pokemons.html">Pokemons</a>
+                </li>
+                <li>
+                  <a href="/Coming Soon/comingsoon.html">Coming Soon</a>
+                </li>
+                <li>
+                  <a href="/index.html">Sign-up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Simulate a smartphone / tablet -->
+      <div class="container-fluid burger_menu">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="/index.html" class="active">Logo</a>
+          <div id="myLinks">
+            <a href="/index.html">Home</a>
+            <a href="/index.html">Top Animes</a>
+            <a href="/Pokemons/pokemons.html">Pokemons</a>
+            <a href="/Coming Soon/comingsoon.html">Coming Soon</a>
+            <a href="/index.html">Sign-up</a>
+            <div class="lineheight" style="padding-left: 16px">
+              <h3>Latest And Updated Animes To Watch</h3>
+              <p>
+                Always be updated for latest anime released or manga stories all
+                news and updates you've ever need about animes
+              </p>
+              <p>
+                Join us and enjoy moments of twists , actions and entertainment
+              </p>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="container-fluid pokemon_banner">
+      <div class="row">
+        <div class="col">
+          <img
+            src="/Pokemons/Pokemon Images/pokmeon.jpg"
+            alt="pokemon_banner"
+            width="100%"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col centertext p-5">
+          <h1>List Of Pokemons</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div id="pokemon_data" class="centertext pokemon_item"></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <button class="magic_button" id="show-random-pokemon">
+            Click For The Magic
+          </button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="colcenter" id="pokemon_random_data"></div>
+        </div>
+      </div>
+    </div>
+    <script src="pokemon.js"></script>
+    <script src="/name.js"></script>
+  </body>
+</html>

@@ -35,4 +35,4 @@ function burgerMenu() {
   } else {
     x.style.display = "block";
   }
-}
+}mySlides

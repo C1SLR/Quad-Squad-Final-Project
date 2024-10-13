@@ -1,0 +1,276 @@
+body {
+    background-color: var(--bg-color) !important;
+    overflow-x: hidden;
+}
+
+:root {
+    --text-color: #f0f0f0;
+    --bg-color: #272727;
+    --span-color: #636363;
+    --text-shadow: #000000;
+
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.banner {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    height: 350px;
+    /* border: 1px solid black; */
+}
+
+#banner {
+    background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/back-banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#thumbnail {
+    background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/dragon_ballz_thumbnal.jpg);
+    background-size: cover;
+}
+
+.anime-thumbnail {
+    left: 2.5%;
+    position: relative;
+    bottom: 40px;
+    background-color: blueviolet;
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+
+    /* position: relative;
+    background-color: aqua;
+    height: 300px;
+    width: 200px;
+     */
+}
+
+.thumbnail-title {
+    position: relative;
+    left: 2.5%;
+    padding: 1.2rem;
+}
+
+.anime-details {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    /* display: flex;
+    position: absolute;
+    bottom: 30%;
+    left: 2.5%; */
+}
+
+#Intro-bg {
+    background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/desktop-wallpaper-kame-house.jpg);
+}
+
+.Intro {
+    height: 525px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    /* border: 2px solid  black; */
+
+
+#story-bg {
+    background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/dragon-ball-z-s-best-characters.jpg);
+    /* background-size: cover; */
+}
+
+#Saiyan {
+    background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/dragon_ball_z_saiyan_saga.jpg);
+
+}
+
+#Namek {
+    background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/namek-mobile.png);
+
+}
+
+#Android {
+    background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/android.jpg);
+}
+
+#Cell {
+    background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/cellsaga.jpg);
+}
+
+#Buu {
+    background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/dragon_ball_z_saiyan_saga.jpg);
+}
+
+#end {
+    background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/Dragon-Ball-Z-1.jpg);
+}
+#goku-bg{
+    background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/chichi-house.jpg);
+}
+#piccolo-bg{
+    background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/wasteland.png);
+}
+.layout {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.layout>p {
+    font-size: 1.4rem;
+    padding-top: 1rem;
+
+}
+
+section {
+    margin-bottom: 4.5rem;
+}
+
+p {
+    font-family: "Protest Strike", sans-serif;
+    color: var(--text-color);
+    text-shadow: 5px 8px 6px var(--text-shadow);
+
+    
+}
+
+.rating {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: var(--span-color);
+    padding-bottom: 1rem;
+}
+
+h1,
+h4 {
+    font-family: "Protest Strike", sans-serif;
+    color: var(--text-color) !important;
+    text-shadow: 5px 8px 6px var(--text-shadow);
+
+}
+
+.dark-overlay {
+    /* position: absolute; */
+    background-color: rgba(0, 0, 0, 0.568);
+    height: inherit;
+
+}
+
+.btn,
+.btn>span {
+    font-family: "Poppins", sans-serif !important;
+}
+
+.area {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+}
+
+.area>img {
+    max-width: 100%;
+    position: relative;
+    top: 2vh;
+}
+
+.area>p {
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .layout>p {
+        font-size: 1rem;
+    }
+
+    .area #Piccolo-Gohan {
+        position: relative;
+        width: 30%;
+        left: 15rem;
+
+    }
+
+    .layout>.area {
+        flex-direction: column;
+
+    }
+
+    #goku-bg {
+        background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/goku-mobile.jpg);
+    }
+
+    #Namek {
+        background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/namek-mobile.png);
+
+    }
+
+    #Saiyan {
+        background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/saiyan-mobile.jpeg);
+    }
+
+    #Android {
+        background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/android-mobile.jpg);
+    }
+
+    #Cell {
+        background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/cell-mobile.jpg);
+    }
+
+    #Buu {
+        background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/buu-mobile.jpg);
+    }
+
+    #piccolo-bg {
+        background-image: url(/Dragon_BallZ/Dragon_Ballz_Images/piccolo-gohan-mobile.jpg);
+    }
+
+    .area>img {
+        visibility: hidden;
+    }
+
+}
+
+@media only screen and (max-width: 701px) {
+    .Intro {
+        background-position: center;
+    }
+
+    #goku {
+        width: 310px;
+        left: 23%;
+
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .anime-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .layout>p {
+        font-size: 0.8rem;
+    }
+
+    #goku {
+        width: 290px;
+        left: 20%;
+
+    }
+}
+
+@media only screen and (max-width: 474px) {
+
+    #goku {
+        width: 270px;
+        left: 20%;
+
+    }
+}

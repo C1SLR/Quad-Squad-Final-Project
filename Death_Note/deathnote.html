@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bootstrap.min.css" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/utilities.css" />
+    <link rel="stylesheet" href="deathnote.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Sixtyfour+Convergence&display=swap"
+      rel="stylesheet"
+    />
+    <title>Death Note</title>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav>
+        <div class="container-fluid">
+          <div class="row header_section_top">
+            <div class="col"><h2>Logo</h2></div>
+            <div class="col header_section_top">
+              <ul>
+                <li>
+                  <a href="/index.html">Home</a>
+                </li>
+                <li>
+                  <a href="/index.html">Top Animes</a>
+                </li>
+                <li>
+                  <a href="/Pokemons/pokemons.html">Pokemons</a>
+                </li>
+                <li>
+                  <a href="/Coming Soon/comingsoon.html">Coming Soon</a>
+                </li>
+                <li>
+                  <a href="/index.html">Sign-up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Simulate a smartphone / tablet -->
+      <div class="container-fluid burger_menu">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="/index.html" class="active">Logo</a>
+          <div id="myLinks">
+            <a href="/index.html">Home</a>
+            <a href="/index.html">Top Animes</a>
+            <a href="/Pokemons/pokemons.html">Pokemons</a>
+            <a href="/Coming Soon/comingsoon.html">Coming Soon</a>
+            <a href="/index.html">Sign-up</a>
+            <div class="lineheight" style="padding-left: 16px">
+              <h3>Latest And Updated Animes To Watch</h3>
+              <p>
+                Always be updated for latest anime released or manga stories all
+                news and updates you've ever need about animes
+              </p>
+              <p>
+                Join us and enjoy moments of twists , actions and entertainment
+              </p>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- <header class="sticky-top">
+      <nav>
+        <div class="container-fluid">
+          <div class="row header_section_top">
+            <div class="col"><h2>Logo</h2></div>
+            <div class="col header_section_top">
+              <ul>
+                <li>
+                  <a href="/index.html">Home</a>
+                </li>
+                <li>
+                  <a href="/index.html">Top Animes</a>
+                </li>
+                <li>
+                  <a href="/Pokemons/pokemons.html">Pokemons</a>
+                </li>
+                <li>
+                  <a href="/Coming Soon/comingsoon.html">Coming Soon</a>
+                </li>
+                <li>
+                  <a href="/index.html">Sign-up</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid burger_menu">
+        <div class="topnav">
+          <a href="/index.html" class="active">Logo</a>
+          <div id="myLinks">
+            <a href="/index.html">Home</a>
+            <a href="/index.html">Top Animes</a>
+            <a href="/Pokemons/pokemons.html">Pokemons</a>
+            <a href="/Coming Soon/comingsoon.html">Coming Soon</a>
+            <a href="/index.html">Sign-up</a>
+            <div class="lineheight" style="padding-left: 16px">
+              <h3>Latest And Updated Animes To Watch</h3>
+              <p>
+                Always be updated for latest anime released or manga stories all
+                news and updates you've ever need about animes
+              </p>
+              <p>
+                Join us and enjoy moments of twists , actions and entertainment
+              </p>
+            </div>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </header> -->
+    <!-- <h1>Death Note</h1>
+    <h2>Trailer Released Death Note</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ELIKAYTDjNc?si=KImj4d3eIxMXiMa9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Introduction</h2>
+    <p>
+      <b>Death Note</b> is a critically acclaimed manga series created by
+      Tsugumi Ohba and illustrated by Takeshi Obata, first serialized in 2003.
+      It explores profound themes of morality, justice, and the nature of good
+      and evil, all wrapped in a thrilling cat-and-mouse game between its two
+      central characters.
+    </p>
+    <h4>Story Line</h4>
+    <p>
+      The story follows Light Yagami, a highly intelligent and disillusioned
+      high school student who discovers a mysterious notebook called the Death
+      Note. This notebook grants its user the power to kill anyone whose name
+      they write in it, as long as they know the person's face. The Death Note
+      originally belongs to Ryuk, a Shinigami (a death god) who drops it into
+      the human world out of boredom.
+    </p>
+    <p>
+      Light, who is frustrated by the world's injustices and rampant crime, sees
+      the Death Note as a means to create a utopia free of evil, where he reigns
+      as a god-like figure. He adopts the alias "Kira" and begins to execute
+      criminals, gaining a following while simultaneously attracting the
+      attention of law enforcement agencies worldwide.
+    </p>
+    <p>
+      In response to Kira's actions, the enigmatic and brilliant detective known
+      only as "L" steps in to apprehend him. What ensues is a high-stakes battle
+      of wits, filled with psychological manipulation, deception, and moral
+      ambiguity. As Light and L engage in a relentless pursuit, both characters
+      reveal their complex motivations and ideologies, leading to intense
+      confrontations and unexpected twists.
+    </p>
+    <h4>Theme And Analysis</h4>
+    <p>
+      <b>Death Note</b> delves deeply into the nature of justice. Light’s
+      initial intention to rid the world of crime transforms into a quest for
+      power and control, raising questions about the morality of his actions.
+      The series challenges readers to consider the consequences of taking
+      justice into one's own hands and the thin line between good and evil.
+    </p>
+    <p>
+      The psychological aspect of the story is further enriched by Light's
+      interactions with other characters, including his allies and enemies. As
+      Light becomes increasingly consumed by his god complex, the narrative
+      explores themes of hubris, the corrupting influence of power, and the
+      isolation that comes with it.
+    </p>
+    <p>
+      Another significant theme is the duality of human nature, portrayed
+      through the contrasting ideologies of Light and L. While Light embodies a
+      utilitarian approach to justice, L represents a more traditional and
+      principled stance. Their conflict serves as a metaphor for broader
+      societal debates about law, morality, and the ethics of punishment.
+    </p>
+    <h4>Character</h4>
+    <p>
+      <b> Light Yagami: </b>
+      The protagonist who begins as a gifted student but evolves into a complex
+      antagonist driven by a desire for control and righteousness. His
+      transformation is both compelling and tragic as he grapples with the
+      consequences of his actions.
+    </p>
+    <p>
+      <b>L:</b>
+      The reclusive detective whose intelligence rivals that of Light. L’s
+      methods are unconventional, and his moral compass often clashes with
+      Light’s. He serves as both a foil and a challenge to Light's ambitions.
+    </p>
+    <p>
+      <b>Ryuk:</b>
+      The Shinigami who drops the Death Note into the human realm. His
+      nonchalant attitude toward human life and death provides comic relief
+      while also acting as a philosophical observer of the unfolding events.
+    </p>
+    <p>
+      <b> Misa Amane </b>
+      A devoted supporter of Kira who possesses her own Death Note. Her
+      infatuation with Light complicates the narrative and adds layers to the
+      themes of love, obsession, and sacrifice.
+    </p>
+    <p>
+      <b>Near And Mello</b>
+      Successors to L, they represent a new generation of detectives with their
+      own strategies and ideologies. Their rivalry with Light adds further
+      complexity to the story.
+    </p>
+    <p>Imapct And Legacy</p>
+    <p>
+      Death Note has had a profound impact on both manga and anime culture,
+      spawning various adaptations, including an anime series, live-action
+      films, and video games. Its exploration of philosophical questions and
+      moral dilemmas resonates with audiences worldwide, making it a timeless
+      piece of storytelling.
+    </p>
+    <p>
+        Overall, "Death Note" combines intricate plotting, psychological depth, and philosophical inquiry, creating a captivating narrative that challenges perceptions of justice and morality. Its characters and themes invite readers to engage in a deeper contemplation of life, death, and the choices we make in the pursuit of justice.
+    </p> -->
+    <main class="hero-main">
+      <div class="banner animate__animated animate__fadeIn" id="banner"></div>
+      <div class="anime-details" data-aos="zoom-in">
+        <div class="anime-thumbnail" id="thumbnail"></div>
+        <div class="thumbnail-title">
+          <h1>Death Note</h1>
+          <h4>Death Note</h4>
+          <div class="review">
+            <div class="rating">
+              <i class="fa-regular fa-star"></i>
+              <span>7.2 | FINISHED</span>
+            </div>
+            <div class="buttons">
+              <button type="button " class="btn btn-light">
+                <i class="fa-solid fa-play"> Play Now</i>
+                <button type="button " class="btn btn-light">
+                  Add to List
+                </button>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="Intro" data-aos="fade-right" id="Intro-bg">
+      <div class="dark-overlay">
+        <div class="layout">
+          <h1>Introduction</h1>
+          <p>
+            Death Note is a critically acclaimed manga series created by Tsugumi
+            Ohba and illustrated by Takeshi Obata, first serialized in 2003. It
+            explores profound themes of morality, justice, and the nature of
+            good and evil, all wrapped in a thrilling cat-and-mouse game between
+            its two central characters.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="Intro" data-aos="fade-in-right" id="story-bg">
+      <div class="dark-overlay">
+        <div class="layout">
+          <h1>Story</h1>
+          <p>
+            The story follows Light Yagami, a highly intelligent and
+            disillusioned high school student who discovers a mysterious
+            notebook called the Death Note. This notebook grants its user the
+            power to kill anyone whose name they write in it, as long as they
+            know the person's face. The Death Note originally belongs to Ryuk, a
+            Shinigami (a death god) who drops it into the human world out of
+            boredom. Light, who is frustrated by the world's injustices and
+            rampant crime, sees the Death Note as a means to create a utopia
+            free of evil, where he reigns as a god-like figure. He adopts the
+            alias "Kira" and begins to execute criminals, gaining a following
+            while simultaneously attracting the attention of law enforcement
+            agencies worldwide. In response to Kira's actions, the enigmatic and
+            brilliant detective known only as "L" steps in to apprehend him.
+            What ensues is a high-stakes battle of wits, filled with
+            psychological manipulation, deception, and moral ambiguity. As Light
+            and L engage in a relentless pursuit, both characters reveal their
+            complex motivations and ideologies, leading to intense
+            confrontations and unexpected twists.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="Intro" data-aos="fade-right" id="light-yagami-bg">
+      <div class="dark-overlay">
+        <div class="layout">
+          <h1>About Characters</h1>
+          <div class="area">
+            <p>
+              Light Yagami, The protagonist who begins as a gifted student but
+              evolves into a complex antagonist driven by a desire for control
+              and righteousness. His transformation is both compelling and
+              tragic as he grapples with the consequences of his actions.
+            </p>
+            <img
+              src="Death_Note_Images/Light.png"
+              data-aos="fade-down"
+              id="Light-Yagami"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Intro" data-aos="fade-right" id="L-bg">
+      <div class="dark-overlay">
+        <div class="layout">
+          <div class="area">
+            <img
+              src="Death_Note_Images/L.png"
+              data-aos="fade-down"
+              alt=""
+              id="L"
+            />
+            <p>
+              L, the reclusive detective whose intelligence rivals that of
+              Light. L’s methods are unconventional, and his moral compass often
+              clashes with Light’s. He serves as both a foil and a challenge to
+              Light's ambitions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Intro" data-aos="fade-right" id="Ryuk-bg">
+      <div class="dark-overlay">
+        <div class="layout">
+          <div class="area">
+            <p>
+              L, the reclusive detective whose intelligence rivals that of
+              Light. L’s methods are unconventional, and his moral compass often
+              clashes with Light’s. He serves as both a foil and a challenge to
+              Light's ambitions.
+            </p>
+            <img
+              src="Death_Note_Images/Ryuk.png"
+              data-aos="fade-down"
+              alt=""
+              id="Ryuk"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Intro" data-aos="fade-right" id="Misa-bg">
+      <div class="dark-overlay">
+        <div class="layout">
+          <div class="area">
+            <img
+              src="Death_Note_Images/Misa-Amane.png"
+              data-aos="fade-down"
+              alt=""
+              id="Misa"
+            />
+            <p>
+              Misa Amane A devoted supporter of Kira who possesses her own Death
+              Note. Her infatuation with Light complicates the narrative and
+              adds layers to the themes of love, obsession, and sacrifice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Intro" data-aos="fade-right" id="Mello-bg">
+      <div class="dark-overlay">
+        <div class="layout">
+          <div class="area">
+            <img
+              src="Death_Note_Images/mello.jpg"
+              data-aos="fade-down"
+              alt=""
+              id="Mello"
+            />
+            <p>
+              Near And Mello, Successors to L, they represent a new generation
+              of detectives with their own strategies and ideologies. Their
+              rivalry with Light adds further complexity to the story.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Intro" data-aos="fade-right" id="impact">
+      <div class="dark-overlay">
+        <div class="layout">
+          <h1>Impact & Legacy</h1>
+          <p>
+            Death Note has had a profound impact on both manga and anime
+            culture, spawning various adaptations, including an anime series,
+            live-action films, and video games. Its exploration of philosophical
+            questions and moral dilemmas resonates with audiences worldwide,
+            making it a timeless piece of storytelling.
+          </p>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col centertext">
+          <h1>Teaser</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <iframe width="100%" height="450rem" src="https://www.youtube.com/embed/ELIKAYTDjNc?si=KImj4d3eIxMXiMa9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <section class="Intro" data-aos="fade-right" id="conclusion">
+      <div class="dark-overlay">
+        <div class="layout">
+          <h1>Conclusion</h1>
+          <p>
+            Overall, "Death Note" combines intricate plotting, psychological
+            depth, and philosophical inquiry, creating a captivating narrative
+            that challenges perceptions of justice and morality. Its characters
+            and themes invite readers to engage in a deeper contemplation of
+            life, death, and the choices we make in the pursuit of justice.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/name.js"></script>
+  </body>
+</html>
