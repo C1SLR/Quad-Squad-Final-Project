@@ -259,7 +259,7 @@ h4 {
 
 @media only screen and (max-width: 550px) {
     .anime-details {
-        /* flex-direction: column; */
+        flex-direction: column;
         align-items: center;
     }
 

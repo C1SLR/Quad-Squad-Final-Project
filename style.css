@@ -122,6 +122,9 @@ body {
     animation: animate 1s linear;
     animation-fill-mode: forwards;
   }
+  .slideshow-container {
+    height: 42rem;
+  }
 }
 @media only screen and (max-width: 900px) {
   .header_section_top {
@@ -197,6 +200,9 @@ body {
     animation: animate 1s linear;
     animation-fill-mode: forwards;
   }
+  .slideshow-container {
+    height: 20rem;
+  }
 }
 @media only screen and (max-width: 899px) {
   .web_banner {
@@ -208,6 +214,9 @@ body {
   h1::before {
     color: #00ff48b1;
     margin-top: 5%;
+  }
+  .mySlides {
+    height: 40rem;
   }
 }
 @media only screen and (max-width: 699px) {
@@ -250,6 +259,9 @@ body {
   border-bottom: 2px solid white;
   background-color: rgba(255, 255, 255, 0.363);
 }
+.slideshow-container {
+  height: 45rem;
+}
 
 @keyframes animate {
   0% {
@@ -271,10 +283,10 @@ body {
 .slideshow-container {
   position: relative;
   margin: auto;
-  padding-bottom: 5rem;
+  /* padding-bottom: 5rem; */
 }
 .mySlides {
-  height: 35rem;
+  height: 45rem;
 }
 .prev,
 .next {
