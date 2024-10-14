@@ -55,6 +55,9 @@ body {
     animation: animate 1s linear;
     animation-fill-mode: forwards;
   }
+  .text{
+    height: 250px;
+  }
 }
 @media only screen and (max-width: 1000px) {
   .header_section_top {
@@ -236,7 +239,33 @@ body {
     margin-top: 15%;
   }
 }
-
+@media only screen and (max-width: 470px) {
+  .text p{
+    display: none;
+  }  
+  .mySlides a{
+    display: none;
+  }
+  .s1, .s2 , .s3 ,.s4{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .s1{
+    background-image: url(Naruto/Naruto_Images/naruto.jpg);
+  }
+  .s2{
+    background-image: url(One_Piece/One_Piece_Images/one-piece.jpg);
+  }
+  .s3{
+    background-image: url(Death_Note/Death_Note_Images/deathnote_thumbnail.jpg);
+  }
+  .s4{
+    background-image: url(Neon_Genesis_Evangelion/Neon_Genesis_Evangelion_Images/neon_genesis_evangelion_thumbnail.jpg);
+  }
+  .dot{
+    visibility: hidden;
+  }
+}
 .header_section_bottom ul li,
 .header_section_top ul li {
   display: inline-block;
@@ -283,7 +312,6 @@ body {
 .slideshow-container {
   position: relative;
   margin: auto;
-  /* padding-bottom: 5rem; */
 }
 .mySlides {
   height: 45rem;

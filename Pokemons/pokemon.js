@@ -83,7 +83,7 @@ async function fetchRandomPokemonData() {
     pokemonCard.appendChild(pokemonName);
 
     const pokemonId = document.createElement("p");
-    pokemonId.innerHTML =`<p class="random_data_hover"><b>Pokedex ID:</b> ${pokemonData.id}</p>`;
+    pokemonId.innerHTML = `<p class="random_data_hover"><b>Pokedex ID:</b> ${pokemonData.id}</p>`;
     pokemonCard.appendChild(pokemonId);
 
     const pokemonType = document.createElement("p");
