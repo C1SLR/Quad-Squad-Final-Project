@@ -25,7 +25,7 @@ body {
     position: relative;
     background-color: rgb(0, 0, 0);
     height: 350px;
-    /* border: 1px solid black; */
+
 }
 
 #banner {
@@ -49,11 +49,7 @@ body {
     width: 200px;
     border-radius: 10px;
 
-    /* position: relative;
-    background-color: aqua;
-    height: 300px;
-    width: 200px;
-     */
+
 }
 
 .thumbnail-title {
@@ -66,10 +62,7 @@ body {
     display: flex;
     position: relative;
     flex-wrap: wrap;
-    /* display: flex;
-    position: absolute;
-    bottom: 30%;
-    left: 2.5%; */
+
 }
 
 #Intro-bg {
@@ -82,12 +75,11 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
-    /* border: 2px solid  black; */
 
 
 #story-bg {
     background-image: url(/Jojos_Bizarre/Jojos_Bizarre_Images/jojos-bizarre-adventure-the-animation-10th-anniversary-v0-gvryc29k9hr81.jpg);
-    /* background-size: cover; */
+
 }
 #Light-Yagami{
     width: 300px;
@@ -198,7 +190,6 @@ h4 {
 }
 
 .dark-overlay {
-    /* position: absolute; */
     background-color: rgba(0, 0, 0, 0.568);
     height: inherit;
 
@@ -224,23 +215,19 @@ h4 {
 .area>p {
     font-size: 1.3rem;
 }
+@media only screen and (max-width: 1000px) {
+    .col {
+        display: none;
+    }
 
+}
+.lineheight > p{
+    text-shadow: none;
+}
 @media only screen and (max-width: 768px) {
     .layout>p {
         font-size: 1rem;
     }
-
-    /* .area #Piccolo-Gohan {
-        position: relative;
-        width: 30%;
-        left: 15rem;
-
-    } */
-
-    /* .layout>.area {
-        flex-direction: column;
-
-    } */
 
 
 
@@ -260,7 +247,7 @@ h4 {
 
 @media only screen and (max-width: 550px) {
     .anime-details {
-        /* flex-direction: column; */
+        flex-direction: column;
         align-items: center;
     }
 
@@ -269,12 +256,3 @@ h4 {
     }
 
 }
-
-/* @media only screen and (max-width: 474px) {
-
-    #goku {
-        width: 270px;
-        left: 20%;
-
-    }
-} */

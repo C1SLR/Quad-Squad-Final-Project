@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color) !important;
+    overflow-x: hidden;
+}
+
+:root {
+    --text-color: #f0f0f0;
+    --bg-color: #272727;
+    --span-color: #636363;
+    --text-shadow: #000000;
+
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.banner {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    height: 350px;
+    /* border: 1px solid black; */
+}
+
+#banner {
+    background-image: url(One_Punch_Man_Images/one-punch-man-the-strongest-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#thumbnail {
+    background-image: url(One_Punch_Man_Images/thumbnail.png);
+    background-size: cover;
+}
+
+.anime-thumbnail {
+    left: 2.5%;
+    position: relative;
+    bottom: 40px;
+    background-color: blueviolet;
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+
+}
+
+.thumbnail-title {
+    position: relative;
+    left: 2.5%;
+    padding: 1.2rem;
+}
+
+.anime-details {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+
+}
+
+#Intro-bg {
+    background-image: url(One_Punch_Man_Images/Intro-bg.jpg);
+}
+
+.Intro {
+    height: 525px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+#saitama-bg {
+    background-image: url(One_Punch_Man_Images/saitama.jpg);
+ 
+}
+#story-bg {
+   
+    background-image: url(One_Punch_Man_Images/story-bg.png);
+    
+}
+
+
+#art-style {
+    background-image: url(One_Punch_Man_Images);
+}
+#culture{
+    background-position: center;
+    background-image: url(One_Punch_Man_Images);
+}
+#hero-monster-bg{
+    background-image: url(One_Punch_Man_Images/saitama-genos-bg.png);
+}
+#saitama-genos{
+    width: 60%;
+    height: 50%;
+}
+#monster-bg{
+    background-image: url(One_Punch_Man_Images/monster-bg.png);
+}
+#association-bg{
+    background-image: url(One_Punch_Man_Images/association-bg.png);
+}
+#alien-bg{
+    background-image: url(One_Punch_Man_Images/invasion.png);
+}
+#philosophical-bg {
+    background-image: url(One_Punch_Man_Images/philosophical.jpg);
+}
+#conclusion {
+    background-image: url(One_Punch_Man_Images/conclusion.png);
+}
+.heading{
+    padding-bottom: 2rem;
+}
+.para{
+    display: flex;
+}
+#saitama-genos{
+    width: 380px;
+}
+#heroes{
+    width: 400px;
+}
+.layout{
+    padding: 2rem;
+}
+.layout>p {
+    font-size: 1.4rem;
+    padding-top: 1rem;
+
+}
+
+section {
+    margin-bottom: 4.5rem;
+}
+
+p {
+    font-family: "Protest Strike", sans-serif;
+    color: var(--text-color);
+    text-shadow: 5px 8px 6px var(--text-shadow);
+
+    
+}
+
+.rating {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: var(--span-color);
+    padding-bottom: 1rem;
+}
+
+h1,
+h4 {
+    font-family: "Protest Strike", sans-serif;
+    color: var(--text-color) !important;
+    text-shadow: 5px 8px 6px var(--text-shadow);
+
+}
+
+.dark-overlay {
+    background-color: rgba(0, 0, 0, 0.568);
+    height: inherit;
+
+}
+
+.btn,
+.btn>span {
+    font-family: "Poppins", sans-serif !important;
+}
+
+.area {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+}
+
+.area>img {
+    max-width: 100%;
+    position: relative;
+    top: 2vh;
+}
+
+.area>p {
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .layout>p {
+        font-size: 1rem;
+    }
+
+
+
+
+    .area>img {
+        visibility: hidden;
+        width: 4px;
+    }
+
+}
+
+@media only screen and (max-width: 701px) {
+    .Intro {
+        background-position: center;
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+    .anime-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .layout>p {
+        font-size: 0.8rem;
+    }
+
+}
+@media only screen and (max-width: 680px) {
+    .para{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #saitama-genos{
+         max-width: 50%;
+         max-height: 50%;
+    }
+    #heroes{
+        position: relative;
+        top: 50px;
+    }
+    .Intro{
+        height: 700px;
+    }
+
+   
+} 
+
+ @media only screen and (max-width: 474px) {
+    .layout{
+        display: flex;
+        flex-direction: column;
+        row-gap: 12rem;
+    }
+    img{
+       display: none;
+    }
+    #conclusion{
+        background-image: url(One_Punch_Man_Images/android.jpg);
+     }
+   
+} 

@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color) !important;
+    overflow-x: hidden;
+}
+
+:root {
+    --text-color: #f0f0f0;
+    --bg-color: #272727;
+    --span-color: #636363;
+    --text-shadow: #000000;
+
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.banner {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    height: 350px;
+
+}
+
+#banner {
+    background-image: url(Attack_on_Titans_Images/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#thumbnail {
+    background-image: url(Attack_on_Titans_Images/thumbnail.jpg);
+    background-size: cover;
+}
+
+.anime-thumbnail {
+    left: 2.5%;
+    position: relative;
+    bottom: 40px;
+    background-color: blueviolet;
+    height: 300px;
+    width: 200px;
+    border-radius: 10px;
+
+}
+
+.thumbnail-title {
+    position: relative;
+    left: 2.5%;
+    padding: 1.2rem;
+}
+
+.anime-details {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+
+}
+
+#Intro-bg {
+    background-image: url(Attack_on_Titans_Images/intro.jpg);
+}
+
+.Intro {
+    height: 525px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+#story-bg {
+
+    background-image: url(Attack_on_Titans_Images/Story-bg.jpg);
+
+}
+
+#colossal-bg {
+    background-image: url(Attack_on_Titans_Images/colossal.jpg);
+
+}
+
+
+
+
+#arc-bg {
+    background-position: center;
+    background-image: url(Attack_on_Titans_Images/arc.jpg)
+}
+
+#eren-bg {
+
+    background-image: url(Attack_on_Titans_Images/eren-bg.png)
+}
+
+#armin-bg {
+
+    background-image: url(Attack_on_Titans_Images/armin-bg.png)
+}
+
+#mikasa-bg {
+
+    background-image: url(Attack_on_Titans_Images/mikasa-bg.png)
+}
+
+#levi-bg {
+
+    background-image: url(Attack_on_Titans_Images/levi-bg.png)
+}
+
+#hero-monster-bg {
+    background-image: url(One_Punch_Man_Images/saitama-genos-bg.png);
+}
+
+#eren {
+    position: relative;
+    bottom: 2.5rem;
+    width: 22rem;
+}
+
+#levi,
+#mikasa{
+    position: relative;
+    bottom: 3rem;
+    width: 22rem;
+}
+
+#armin {
+    position: relative;
+    top: 2rem;
+    width: 25rem;
+}
+
+#wall-maria-bg {
+    background-image: url(Attack_on_Titans_Images/wall-maria.png);
+}
+
+#trost-bg {
+    background-image: url(Attack_on_Titans_Images/Trost.png);
+}
+
+#female-titan-bg {
+    background-image: url(Attack_on_Titans_Images/female-titan.jpg);
+}
+
+#clash-bg {
+    background-image: url(Attack_on_Titans_Images/clash.jpg);
+}
+
+#truth-bg {
+    background-image: url(Attack_on_Titans_Images/truth.jpg);
+}
+
+#marley-bg {
+    background-image: url(Attack_on_Titans_Images/marley-arc.jpg);
+}
+
+#paradise-bg {
+    background-image: url(Attack_on_Titans_Images/paradise.jpg);
+}
+
+#rumbling-bg {
+    background-image: url(Attack_on_Titans_Images/rumbling.png);
+}
+
+
+#conclusion {
+    background-image: url(Attack_on_Titans_Images/conclusion.jpg);
+}
+
+.heading {
+    padding-bottom: 2rem;
+}
+
+.para {
+    display: flex;
+}
+
+#Mikasa {
+    display: flex;
+}
+
+.layout{
+    padding: 1rem;
+}
+.layout > p {
+    font-size: 1.4rem;
+    padding-top: 1rem;
+
+}
+
+section {
+    margin-bottom: 4.5rem;
+}
+
+p {
+    font-family: "Protest Strike", sans-serif;
+    color: var(--text-color);
+    text-shadow: 5px 8px 6px var(--text-shadow);
+
+
+}
+
+.rating {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: var(--span-color);
+    padding-bottom: 1rem;
+}
+
+h1,
+h4 {
+    font-family: "Protest Strike", sans-serif;
+    color: var(--text-color) !important;
+    text-shadow: 5px 8px 6px var(--text-shadow);
+
+}
+
+.dark-overlay {
+    background-color: rgba(0, 0, 0, 0.568);
+    height: inherit;
+
+}
+
+.btn,
+.btn>span {
+    font-family: "Poppins", sans-serif !important;
+}
+
+.area {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+}
+
+.area>img {
+    max-width: 100%;
+    position: relative;
+    top: 2vh;
+}
+
+.area>p {
+    font-size: 1.3rem;
+}
+
+.lineheight > p{
+    text-shadow: none;
+}
+@media only screen and (max-width: 701px) {
+    .Intro {
+        background-position: center;
+    }
+
+}
+
+@media only screen and (max-width: 720px) {
+    .anime-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .layout>p {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 680px) {
+    .para {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .Intro {
+        height: 700px;
+    }
+
+
+}
+
+@media only screen and (max-width: 474px) {
+    .layout {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12rem;
+        font-size: 2rem;
+    }
+
+    img {
+        display: none;
+    }
+
+    #mikasa-bg {
+        background-image: url(Attack_on_Titans_Images/mikasa-mobile.jpg);
+    }
+
+    #levi-bg {
+        background-image: url(Attack_on_Titans_Images/levi-mobile.jpg);
+    }
+
+    #armin-bg {
+        background-image: url(Attack_on_Titans_Images/armin-mobile.jpg);
+    }
+
+    #eren-bg {
+        background-image: url(Attack_on_Titans_Images/eren-mobile.jpg);
+    }
+
+    #trost-bg {
+        background-image: url(Attack_on_Titans_Images/trost-mobile.jpg);
+    }
+
+    #clash-bg {
+        background-image: url(Attack_on_Titans_Images/clash-mobile.png);
+    }
+
+    #paradise {
+        background-image: url(Attack_on_Titans_Images/paradise-mobile.jpg);
+    }
+
+    #rumbling-bg {
+        background-image: url(Attack_on_Titans_Images/rumbling-mobile.jpg);
+    }
+
+    #conclusion {
+        background-image: url(Attack_on_Titans_Images/conclusion-mobile.jpg);
+    }
+
+}

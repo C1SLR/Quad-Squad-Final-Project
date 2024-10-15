@@ -166,11 +166,15 @@ h4 {
     position: relative;
     top: 2vh;
 }
-
+.layout{
+    padding: 2rem;
+}
 .area>p {
     font-size: 1.3rem;
 }
-
+.lineheight > p{
+    text-shadow: none;
+}
 @media only screen and (max-width: 768px) {
     .layout>p {
         font-size: 1rem;

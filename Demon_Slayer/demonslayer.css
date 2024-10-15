@@ -109,7 +109,9 @@ body {
     background-image: url(/Demon_Slayer/Demon_Slayer_Images/theme-bg.jpg);
 }
 
-
+.layout{
+    padding: 2rem;
+}
 .layout>p {
     font-size: 1.4rem;
     padding-top: 1rem;
@@ -170,23 +172,15 @@ h4 {
 .area>p {
     font-size: 1.3rem;
 }
+.lineheight > p{
+    text-shadow: none;
+}
 
 @media only screen and (max-width: 768px) {
     .layout>p {
         font-size: 1rem;
     }
 
-    /* .area #Piccolo-Gohan {
-        position: relative;
-        width: 30%;
-        left: 15rem;
-
-    } */
-
-    /* .layout>.area {
-        flex-direction: column;
-
-    } */
 
 
 
@@ -215,12 +209,3 @@ h4 {
     }
 
 }
-
-/* @media only screen and (max-width: 474px) {
-
-    #goku {
-        width: 270px;
-        left: 20%;
-
-    }
-} */
